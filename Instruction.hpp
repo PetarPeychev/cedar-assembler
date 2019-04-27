@@ -5,6 +5,9 @@ instruction definition file.
 
 ---------------------------------------------------------*/
 
+#ifndef INSTRUCTION_H
+#define INSTRUCTION_H
+
 #include <string>
 #include <bitset>
 
@@ -20,3 +23,5 @@ public:
     std::bitset<16> getBits();
     int getSize();
 };
+
+#endif

@@ -6,8 +6,8 @@ using namespace std;
 Instruction::Instruction(string mnemonic, bitset<16> bits, int size)
 {
     this->mnemonic = mnemonic;
-    utils::shiftLeft(&bits);
     this->bits = bits;
+    shiftLeft(&this->bits);
     this->size = size;
 }
 
