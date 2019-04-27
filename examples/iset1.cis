@@ -1,0 +1,4 @@
+MOVEI   :   E
+ADD     :   D
+BNE     :   FD
+RTS     :
