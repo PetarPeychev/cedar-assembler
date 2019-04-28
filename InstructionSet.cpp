@@ -1,6 +1,12 @@
 #include "InstructionSet.hpp"
 #include <algorithm>
 
+InstructionSet::~InstructionSet()
+{
+    for(auto instr : instructions)
+    delete instr;
+}
+
 Instruction *InstructionSet::find(std::string mnemonic)
 {
     for(auto const& instr : instructions)
@@ -14,10 +20,4 @@ Instruction *InstructionSet::find(std::string mnemonic)
 void InstructionSet::add(Instruction *instr)
 {
     instructions.push_back(instr);
-}
-
-InstructionSet::~InstructionSet()
-{
-    for(auto instr : instructions)
-        delete instr;
 }
