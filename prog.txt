@@ -1,0 +1,11 @@
+START	ORG		5
+age		EQU		num
+num 	EQU		14	
+LABEL 	MOVEI 	4E2
+		ADDI    age
+		ORG		D		
+      	BNZ    	label
+		DS		2		
+		DC		AFD
+		END		FF
+		

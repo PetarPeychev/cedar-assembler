@@ -7,6 +7,8 @@ Instruction::Instruction(string mnemonic, bitset<16> bits, int size)
 {
     this->mnemonic = mnemonic;
     this->bits = bits;
+
+	// pad bitset with 0's on the right
     shiftLeft(&this->bits);
     this->size = size;
 }

@@ -1,0 +1,10 @@
+STA+	:	FFFE
+STA		:	FFFF
+BNZ		: 	FD
+BZ		:	FE
+LDD		:	9
+STORE	: 	A
+MOVE	: 	B
+MOVEI	: 	C
+JMP		: 	E
+ADDI	:	D

@@ -14,7 +14,7 @@ Instruction *InstructionSet::find(std::string mnemonic)
         if(instr->getMnemonic() == mnemonic)
             return instr;
     }
-    return NULL;
+    return nullptr;
 }
 
 void InstructionSet::add(Instruction *instr)
